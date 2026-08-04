@@ -27,4 +27,10 @@ describe('String Calculator', () => {
         const result = stringCalculator(stringToCalculate);
         expect(result).toBe(15);
     });
+
+    it('should handle new lines as separators', () => {
+        const stringToCalculate = '1\n2,3';
+        const result = stringCalculator(stringToCalculate);
+        expect(result).toBe(6);
+    });
 });
