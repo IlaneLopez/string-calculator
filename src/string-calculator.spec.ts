@@ -33,4 +33,10 @@ describe('String Calculator', () => {
         const result = stringCalculator(stringToCalculate);
         expect(result).toBe(6);
     });
+
+    it('should support custom delimiters', () => {
+        const stringToCalculate = '//;\n1;2';
+        const result = stringCalculator(stringToCalculate);
+        expect(result).toBe(3);
+    })
 });
