@@ -9,4 +9,10 @@ describe('String Calculator', () => {
         expect(result).toBe(0);
 
     })
-})
+
+    it('should return the number for a single number string', () => {
+        const stringToCalculate = '1';
+        const result = stringCalculator(stringToCalculate);
+        expect(result).toBe(1);
+    });
+});

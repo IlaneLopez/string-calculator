@@ -1,3 +1,7 @@
 export function stringCalculator(input: string): number {
-    return 0
+    if (input === '') {
+        return 0
+    }
+
+    return parseInt(input);
 }
