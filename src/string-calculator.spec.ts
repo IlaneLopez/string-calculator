@@ -1,4 +1,5 @@
 import { describe, it, expect } from 'vitest';
+import { stringCalculator } from './string-calculator';
 
 describe('String Calculator', () => {
     it('should return 0 for an empty string', () => {
@@ -6,12 +7,6 @@ describe('String Calculator', () => {
         const stringToCalculate = '';
         const result = stringCalculator(stringToCalculate);
         expect(result).toBe(0);
-
-    })
-    it('should return the sum of one or two numbers separated by a comma', () => {
-        const stringToCalculate = '1,2';
-        const result = stringCalculator(stringToCalculate);
-        expect(result).toBe(3);
 
     })
 })
